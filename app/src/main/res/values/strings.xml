@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="text">こんばんは，名城！！</string>
+    <string name="text1">こんばんはおはよう，名城！！</string>
 </resources>
