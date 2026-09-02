@@ -16,6 +16,8 @@ public class MainActivity3 extends AppCompatActivity {
 
     private ActivityMain3Binding binding;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,21 @@ public class MainActivity3 extends AppCompatActivity {
         Intent intent = getIntent();
         String sentText = intent.getStringExtra("editText");
         binding.cal.setText(sentText);
+
+        //okボタン
+        binding.buttonOk.setOnClickListener(viwe -> {
+            var ok_intent = new Intent();
+            ok_intent.putExtra("ret", "OK");
+            setResult(RESULT_OK,ok_intent);
+            finish();
+        });
+
+        //cancelボタン
+        binding.buttonCancel.setOnClickListener(view -> {
+            setResult(RESULT_CANCELED);
+            finish();
+        });
+
 
         //電卓用code
         binding.text0.setOnClickListener(view -> {
