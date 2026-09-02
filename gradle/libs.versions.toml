@@ -9,6 +9,7 @@ activity = "1.8.0"
 constraintlayout = "2.1.4"
 desugerJdkLibs = "2.1.5"
 datastore = "1.1.7"
+activityKtx = "1.13.0"
 
 
 
@@ -23,6 +24,7 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 desuger-jdk-libs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugerJdkLibs" }
 datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
 datastore-preferences-rxjava3 = { group = "androidx.datastore", name = "datastore-preferences-rxjava3", version.ref = "datastore" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
 
 
 [plugins]
