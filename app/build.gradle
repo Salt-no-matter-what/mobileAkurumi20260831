@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation libs.activity.ktx
     coreLibraryDesugaring libs.desuger.jdk.libs
     implementation libs.appcompat
     implementation libs.material
