@@ -17,11 +17,6 @@
         </activity>
         <activity
             android:name=".MainActivity2"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize">
-        </activity>
-        <activity
-            android:name=".MainActivity3"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -29,6 +24,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
         </activity>
     </application>
 

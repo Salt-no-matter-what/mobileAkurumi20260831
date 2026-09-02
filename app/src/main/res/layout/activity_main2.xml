@@ -11,7 +11,7 @@
         android:id="@+id/buttun_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buttun A"
+        android:text="明示的Intent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttun_b"
@@ -20,7 +20,7 @@
         android:id="@+id/buttun_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buttun B"
+        android:text="暗黙的Intent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/buttun_a"
         app:layout_constraintStart_toEndOf="@+id/buttun_a"/>
@@ -44,13 +44,34 @@
         android:text="これは表示されていない"
         />
     <TextView
-        android:id="@+id/textView_visiblefirst"
+        android:id="@+id/textView_gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/textView_invisible"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_margin="16dp"
         android:text="これも最初に表示される"
+        />
+
+
+    <EditText
+        android:id="@+id/intent_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="MainActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_gone"
+        app:layout_constraintEnd_toStartOf="@+id/intent_buttun"
+        />
+
+    <EditText
+        android:id="@+id/intent_buttun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="intent"
+        app:layout_constraintStart_toEndOf="@id/intent_editText"
+        app:layout_constraintTop_toTopOf="@id/intent_editText"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
 
