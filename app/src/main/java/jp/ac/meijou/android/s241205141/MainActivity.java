@@ -11,12 +11,18 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.squareup.moshi.JsonAdapter;
+import com.squareup.moshi.Moshi;
+
 import jp.ac.meijou.android.s241205141.databinding.ActivityMainBinding;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
 
     private PrefDataStore prefDataStore;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
