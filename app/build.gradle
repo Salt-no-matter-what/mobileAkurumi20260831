@@ -5,13 +5,13 @@ plugins {
 android {
     namespace 'jp.ac.meijou.android.s241205141'
     compileSdk {
-        version = release(36)
+        version = release(37)
     }
 
     defaultConfig {
         applicationId "jp.ac.meijou.android.s241205141"
         minSdk 24
-        targetSdk 36
+        targetSdk 37
         versionCode 1
         versionName "1.0"
 
@@ -47,4 +47,7 @@ dependencies {
     androidTestImplementation libs.espresso.core
     implementation libs.datastore.preferences
     implementation libs.datastore.preferences.rxjava3
+    implementation libs.okhttp
+    implementation libs.moshi
+
 }
